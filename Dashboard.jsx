@@ -103,7 +103,7 @@ export default function Dashboard({ session }) {
   return (
     <div className="dashboard">
       <header className="dashboard-header">
-        <div className="brand-mark small">{'</>'}</div>
+        <img src="/logo-webdev-xp-transparent.png" alt="Agent XP" className="brand-mark small" />
         <h1>{client.name}</h1>
         <button className="btn-secondary" onClick={handleLogout}>
           Esci

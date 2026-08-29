@@ -21,8 +21,8 @@ export default function Login() {
   return (
     <div className="auth-screen">
       <div className="auth-card">
-        <div className="brand-mark">{'></>'}</div>
-        <h1>Agent XP</h1>
+        <img src="/logo-webdev-xp-transparent.png" alt="Agent XP" className="brand-mark" />
+        <h1>Agent IG</h1>
         <p className="subtitle">Accedi al tuo pannello contenuti</p>
 
         <form onSubmit={handleSubmit}>

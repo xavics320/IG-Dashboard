@@ -28,13 +28,11 @@ body {
 }
 
 .brand-mark {
-  font-family: 'Courier New', monospace;
-  font-weight: 700;
-  color: var(--accent);
-  font-size: 2rem;
+  height: 140px;
+  width: auto;
 }
 .brand-mark.small {
-  font-size: 1.25rem;
+  height: 90px;
 }
 
 /* Login */
