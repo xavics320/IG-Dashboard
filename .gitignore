@@ -1,0 +1,20 @@
+# Dipendenze: enorme, va sempre rigenerata con npm install, mai versionata
+node_modules/
+
+# Output della build: generato da npm run build, non va mai scritto a mano
+# ne' modificato direttamente, quindi non ha senso tracciarlo nella cronologia
+dist/
+
+# File d'ambiente: contengono le TUE chiavi Supabase specifiche.
+# Anche se qui e' "solo" la anon key (pensata per essere pubblica), tenerla
+# fuori da Git resta buona pratica: valori diversi per ambienti diversi
+# (locale/produzione), e mai l'abitudine di versionare credenziali per riflesso.
+.env
+.env.local
+
+# File di sistema/editor che Windows o VS Code creano automaticamente,
+# irrilevanti per il progetto e diversi da persona a persona
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
