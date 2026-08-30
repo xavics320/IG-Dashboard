@@ -71,6 +71,8 @@ export default function Dashboard({ session }) {
         style_bg_color: client.style_bg_color,
         style_text_color: client.style_text_color,
         style_accent_color: client.style_accent_color,
+        style_visual: client.style_visual,
+        style_font: client.style_font,
         telegram_chat_id: client.telegram_chat_id,
         logo_url: logoUrl,
       })
@@ -172,6 +174,29 @@ export default function Dashboard({ session }) {
               <span>{client.style_accent_color}</span>
             </div>
           </div>
+
+          <label htmlFor="stile">Stile</label>
+          <select 
+            id="stile"
+            value={client.style_visual}
+            onChange={(e) => updateField('style_visual', e.target.value)}>
+              <option value="illustrativo">Illustrativo</option>
+              <option value="fotorealistico">Fotorealistico</option>
+              <option value="geometrico">Geometrico</option>
+              <option value="premium">Premium</option>
+          </select>
+
+          <label htmlFor="font">Font</label>
+          <select
+          id="font"
+          value={client.style_font}
+          onChange={(e) => updateField('style_font', e.target.value)}
+          >
+          <option value="sans-moderno">Sans moderno</option>
+          <option value="sans-bold">Sans bold</option>
+          <option value="serif">Serif elegante</option>
+          <option value="monospace">Monospace</option>
+          </select>
 
           <label htmlFor="logo">Logo</label>
           {logoPreview && <img src={logoPreview} alt="Anteprima logo" className="logo-preview" />}
